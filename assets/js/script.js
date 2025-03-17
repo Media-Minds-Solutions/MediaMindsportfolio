@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("contact-form").addEventListener("submit", function (event) {
       event.preventDefault(); // Prevent default form submission
 
-      emailjs.sendForm("service_jpbpne3", "template_2dgfsxm", this)
+      emailjs.sendForm("service_jpbpne3", "template_02g3mfm", this)
           .then(function (response) {
               alert("Message Sent Successfully!");
               document.getElementById("contact-form").reset(); // Clear form
