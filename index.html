@@ -246,7 +246,7 @@ Let’s create something extraordinary together! 🚀
           <div class="btn-group">
             <button class="btn btn-secondary">Hire me</button>
 
-            <button class="btn btn-primary">Download cv</button>
+            <button class="btn btn-primary">Download Brochure</button>
           </div>
 
         </div>
@@ -269,6 +269,23 @@ Let’s create something extraordinary together! 🚀
 
           <h2 class="h3 section-title">What Services are Provided?</h2>
 
+          <p class="section-text">
+            At Media Minds, we take pride in delivering clean, transparent, and the best service in the market across a wide range of media and marketing solutions. Our expertise includes:
+          </p>
+          <ul class="section-text">
+            <li>Digital Marketing 📈</li>
+            <li>Ad Shoots 🎥</li>
+            <li>Website & App Development 💻</li>
+            <li>Graphic Design 🎨</li>
+            <li>Corporate Social Media Handling 📱</li>
+            <li>Product & Service Publicity Designs 🏷️</li>
+            <li>Interior Design & Construction 🏠</li>
+            <li>Product Photography 📷</li>
+            <li>Food Photograph y🍽️ </li>
+            <li>YouTube Content Creation ▶️</li>
+            <li>Brand Promotions 📢</li>
+            <li>Animation & VFX 🎞️</li>
+          </ul>
           <p class="section-text">
             We believe in quality, creativity, and integrity, ensuring that every project we undertake delivers impactful results. Whether you're looking for compelling visual content, strategic brand growth, or innovative design solutions, we are committed to bringing your vision to life with excellence. 
           </p>
@@ -739,9 +756,9 @@ Let’s create something extraordinary together! 🚀
               <div class="wrapper">
                 <h3 class="h4 contact-item-title">Phone:</h3>
 
-                <a href="tel:01234567789" class="contact-info">+91 93479 93817</a>
+                <a href="tel:+919347993817" class="contact-info">+91 93479 93817</a>
 
-                <a href="tel:09765432200" class="contact-info">+91 95152 04240</a>
+                <a href="tel:+919515204240" class="contact-info">+91 95152 04240</a>
               </div>
 
             </li>
@@ -804,70 +821,49 @@ Let’s create something extraordinary together! 🚀
 
         </div>
 
-        <form action="" class="contact-form">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Contact Form</title>
+          <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+      </head>
+      <body>
+          <form id="contact-form" class="contact-form">
+              <div class="form-wrapper">
+                  <label for="name" class="form-label">Name</label>
+                  <div class="input-wrapper">
+                      <input type="text" name="name" id="name" required placeholder="e.g John Doe" class="input-field">
+                      <ion-icon name="person-circle"></ion-icon>
+                  </div>
+              </div>
+      
+              <div class="form-wrapper">
+                  <label for="email" class="form-label">Email</label>
+                  <div class="input-wrapper">
+                      <input type="email" name="email" id="email" required placeholder="e.g johndoe@mail.com" class="input-field">
+                      <ion-icon name="mail"></ion-icon>
+                  </div>
+              </div>
+      
+              <div class="form-wrapper">
+                  <label for="phone" class="form-label">Phone</label>
+                  <div class="input-wrapper">
+                      <input type="tel" name="phone" id="phone" required placeholder="Phone Number" class="input-field">
+                      <ion-icon name="call"></ion-icon>
+                  </div>
+              </div>
+      
+              <div class="form-wrapper">
+                  <label for="message" class="form-label">Message</label>
+                  <div class="input-wrapper">
+                      <textarea name="message" id="message" required placeholder="Write message..." class="input-field"></textarea>
+                      <ion-icon name="chatbubbles"></ion-icon>
+                  </div>
+              </div>
 
-          <div class="form-wrapper">
-
-            <label for="name" class="form-label">Name</label>
-
-            <div class="input-wrapper">
-
-              <input type="text" name="name" id="name" required placeholder="e.g John Doe" class="input-field">
-
-              <ion-icon name="person-circle"></ion-icon>
-
-            </div>
-
-          </div>
-
-          <div class="form-wrapper">
-
-            <label for="email" class="form-label">Email</label>
-
-            <div class="input-wrapper">
-
-              <input type="email" name="email" id="email" required placeholder="e.g johndoe@mail.com"
-                class="input-field">
-
-              <ion-icon name="mail"></ion-icon>
-
-            </div>
-
-          </div>
-
-          <div class="form-wrapper">
-
-            <label for="phone" class="form-label">Phone</label>
-
-            <div class="input-wrapper">
-
-              <input type="tel" name="phone" id="phone" required placeholder="Phone Number" class="input-field">
-
-              <ion-icon name="call"></ion-icon>
-
-            </div>
-
-          </div>
-
-          <div class="form-wrapper">
-
-            <label for="message" class="form-label">Message</label>
-
-            <div class="input-wrapper">
-
-              <textarea name="message" id="message" required placeholder="Write message..."
-                class="input-field"></textarea>
-
-              <ion-icon name="chatbubbles"></ion-icon>
-
-            </div>
-
-          </div>
-
-          <button type="submit" class="btn btn-primary">Send</button>
-
-        </form>
-
+              <button type="submit" class="btn btn-primary">Send</button>
+          </form>        
+      </body>
       </section>
 
     </article>

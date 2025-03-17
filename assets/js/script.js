@@ -103,3 +103,23 @@ if (localStorage.getItem("theme") === "light_theme") {
   document.body.classList.remove("light_theme");
   document.body.classList.add("dark_theme");
 }
+
+/*
+  send email
+*/
+
+document.addEventListener("DOMContentLoaded", function () {
+  emailjs.init("qZV54bMf1w-_YZ7kf"); // Replace with your EmailJS Public Key
+
+  document.getElementById("contact-form").addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevent default form submission
+
+      emailjs.sendForm("service_jpbpne3", "template_2dgfsxm", this)
+          .then(function (response) {
+              alert("Message Sent Successfully!");
+              document.getElementById("contact-form").reset(); // Clear form
+          }, function (error) {
+              alert("Failed to Send Message: " + error.text);
+          });
+  });
+});
