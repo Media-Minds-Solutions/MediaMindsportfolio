@@ -210,6 +210,9 @@ body.active { overflow: hidden; }
   border: 1px solid transparent;
   border-radius: var(--radius-4);
   transition: var(--transition-1);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .btn-primary { border-color: var(--color-primary); }
@@ -1353,18 +1356,22 @@ textarea.input-field {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
+
+
+}
+
 .carousel-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   width: 100%;
-  padding: 50px 0; /* Space to prevent overlap */
+  padding: 50px 0;
 }
 
 /* Carousel container */
 .carousel-container {
-  width: 80%;
+  width: 90%;
   overflow: hidden;
   position: relative;
 }
@@ -1386,11 +1393,16 @@ textarea.input-field {
 
 /* Images */
 .carousel img {
-  width: 250px; /* Fixed width */
-  height: 250px; /* Fixed height */
+  width: 250px;
+  height: 250px;
   object-fit: contain;
   border-radius: 10px;
   background-color: #f0f0f0;
+  transition: transform 0.2s ease-in-out;
+}
+
+.carousel img:hover {
+  transform: scale(1.05);
 }
 
 /* Navigation buttons positioned outside the carousel */
@@ -1406,15 +1418,16 @@ textarea.input-field {
   font-size: 24px;
   border-radius: 50%;
   z-index: 10; /* Keep on top */
+  transition: background 0.3s;
 }
 
 /* Positioning of Previous and Next buttons */
 .prev {
-  left: 10px; /* Positioned to the very left of the page */
+  left: 10px;
 }
 
 .next {
-  right: 10px; /* Positioned to the very right of the page */
+  right: 10px;
 }
 
 /* Hover effect */
@@ -1422,5 +1435,19 @@ textarea.input-field {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  .carousel-container {
+      width: 100%;
+  }
+  
+  .carousel img {
+      width: 180px;
+      height: 180px;
+  }
 
+  .scrollbtn {
+      padding: 10px 12px;
+      font-size: 18px;
+  }
 }
