@@ -1353,4 +1353,74 @@ textarea.input-field {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
+.carousel-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 50px 0; /* Space to prevent overlap */
+}
+
+/* Carousel container */
+.carousel-container {
+  width: 80%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Scrollable image section */
+.carousel {
+  display: flex;
+  gap: 10px;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  white-space: nowrap;
+  padding: 10px;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari */
+}
+
+/* Images */
+.carousel img {
+  width: 250px; /* Fixed width */
+  height: 250px; /* Fixed height */
+  object-fit: contain;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+}
+
+/* Navigation buttons positioned outside the carousel */
+.scrollbtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 50%;
+  z-index: 10; /* Keep on top */
+}
+
+/* Positioning of Previous and Next buttons */
+.prev {
+  left: 10px; /* Positioned to the very left of the page */
+}
+
+.next {
+  right: 10px; /* Positioned to the very right of the page */
+}
+
+/* Hover effect */
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
 }

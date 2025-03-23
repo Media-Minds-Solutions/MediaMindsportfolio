@@ -33,7 +33,6 @@
         <div class="navbar-actions">
           <select name="language" id="lang">
             <option value="en">En</option>
-            <option value="ar">Ar</option>
           </select>
           <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
             <span class="icon"></span>
@@ -124,7 +123,7 @@
                 <div class="card-icon">
                   <img src="./assets/images/stats-card_icon-2.png" alt="Checkmark icon">
                 </div>
-                <h2 class="h2 card-title"> 20+ <strong>Completed Projects</strong>
+                <h2 class="h2 card-title"> 32+ <strong>Completed32</strong>
                 </h2>
                 <ion-icon name="chevron-forward-outline"></ion-icon>
               </a>
@@ -134,7 +133,7 @@
                 <div class="card-icon">
                   <img src="./assets/images/stats-card_icon-3.png" alt="Peoples rating icon">
                 </div>
-                <h2 class="h2 card-title"> 10+ <strong>Happy Clients</strong>
+                <h2 class="h2 card-title"> 40+ <strong>Happy Clients</strong>
                 </h2>
                 <ion-icon name="chevron-forward-outline"></ion-icon>
               </a>
@@ -153,7 +152,7 @@
             <h2 class="h3 section-title">Need a Creative Product? We can Help You!</h2>
             <p class="section-text"> At Media Minds, we bring brands to life with cutting-edge creativity and strategic marketing solutions. Our expertise spans across Digital Marketing, Ad Shoots, Website & App Development, Graphic Design, Corporate Social Media Handling, Product & Service Publicity Designs, Interior Design & Construction, Product Photography, Food Photography, YouTube Content Creation, Brand Promotions, and Animation & VFX. Whether you need stunning visuals, engaging content, or a complete brand transformation, we deliver innovative solutions that captivate audiences and drive success. From immersive animations to high-impact ad campaigns, we ensure your brand stands out in today's competitive landscape. Let’s create something extraordinary together! 🚀 </p>
             <div class="btn-group">
-              <button class="btn btn-secondary">Hire me</button>
+              <a href="#contact" class="btn btn-primary">Hire Me</a>
               <button class="btn btn-primary">Download Brochure</button>
             </div>
           </div>
@@ -165,40 +164,21 @@
           <div class="about-content section-content">
             <p class="section-subtitle">Brands</p>
             <h2 class="h3 section-title">Brands that we worked with</h2>
-            <ul class="project-list">
-              <li>
-                <a href="#" class="project-card">
-                  <figure class="card-banner">
-                    <img src="./assets/images/Hero_logo.png" class="w-100" alt="Hero.">
-                  </figure>
-                  <div class="card-content">
-                    <h3 class="h4 card-title">Hero</h3>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="project-card">
-                  <figure class="card-banner">
-                    <img src="./assets/images/tvs_logo.png" class="w-100" alt="TVS.">
-                  </figure>
-                  <div class="card-content">
-                    <h3 class="h4 card-title">TVS</h3>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="project-card">
-                  <figure class="card-banner">
-                    <img src="./assets/images/Never_end.png" class="w-100" alt="Never End.">
-                  </figure>
-                  <div class="card-content">
-                    <h3 class="h4 card-title">Never End</h3>
-                  </div>
-                </a>
-              </li>
-            </ul>
           </div>
         </section>
+        <!--
+        Scrollable
+        -->
+        <div class="carousel-container">
+          <button class="scrollbtn prev" onclick="scrollCarousel(-1)">&#10094;</button>
+          <div class="carousel" id="carousel">
+            <img src="./assets/images/Hero_logo.png"  alt="Hero.">
+            <img src="./assets/images/tvs_logo.png"  alt="TVS.">
+            <img src="./assets/images/Honda_logo.png" alt="Honda.">
+            <img src="./assets/images/Vespa_logo.png" alt="Vespa.">
+          </div>
+          <button class="scrollbtn next" onclick="scrollCarousel(1)">&#10095;</button>
+      </div>
         <!-- 
         - #SKILLS
       -->
@@ -211,9 +191,8 @@
             <p class="section-text"> At Media Minds, we take pride in delivering clean, transparent, and the best service in the market across a wide range of media and marketing solutions. Our expertise includes: </p>
             <ul class="section-text">
               <li>Digital Marketing 📈</li>
-              <li>Ad Shoots 🎥</li>
-              <li>Website & App Development 💻</li>
               <li>Graphic Design 🎨</li>
+              <li>Website & App Development 💻</li>
               <li>Corporate Social Media Handling 📱</li>
               <li>Product & Service Publicity Designs 🏷️</li>
               <li>Interior Design & Construction 🏠</li>
@@ -222,6 +201,7 @@
               <li>YouTube Content Creation ▶️</li>
               <li>Brand Promotions 📢</li>
               <li>Animation & VFX 🎞️</li>
+              <li>Ad Shoots 🎥</li>
             </ul>
             <p class="section-text"> We believe in quality, creativity, and integrity, ensuring that every project we undertake delivers impactful results. Whether you're looking for compelling visual content, strategic brand growth, or innovative design solutions, we are committed to bringing your vision to life with excellence. </p>
           </div>
@@ -235,174 +215,210 @@
               <div class="project-content section-content">
                 <p class="section-subtitle">My Works</p>
                 <h2 class="h3 section-title">See My Works Which Will Amaze You!</h2>
-                <p class="section-text"> We provide the best quality </p>
-                <ul class="section-text">
-                  <li>Ad Shoots</li>
-                  <li>Photo Shoots</li>
-                  <li>Digital Marketing </li>
-                </ul>
-                <p class="section-text"> and websites and Applications that serves for the long-term. Well-documented, clean, easy and elegant interface helps any non-technical clients. </p>
+                <p class="section-text"> We provide the best quality Graphic Designing, Digital Marketing and we specialize in websites and Applications that serves for the long-term. Well-documented, clean, easy and elegant interface helps any non-technical clients. </p>
                 </p>
               </div>
             </li>
             <li>
               <a href="#" class="project-card">
                 <figure class="card-banner">
-                  <img src="./assets/images/project-1.jpeg" class="w-100" alt="A macintosh on a yellow background.">
+                  <img src="./assets/images/project-1.jpg" class="w-100" alt="Best Work"">
                 </figure>
               </a>
             </li>
             <li>
               <a href="#" class="project-card">
                 <figure class="card-banner">
-                  <img src="./assets/images/project-2.jpeg" class="w-100" alt="On a Blue background, a Wacom and a mouse.">
+                  <img src="./assets/images/project-2.jpg" class="w-100" alt="Best Work"">
                 </figure>
               </a>
             </li>
             <li>
               <a href="#" class="project-card">
                 <figure class="card-banner">
-                  <img src="./assets/images/project-3.jpeg" class="w-100" alt="A Cassette tape on a mellow apricot background.">
+                  <img src="./assets/images/project-3.jpg" class="w-100" alt="Best Work"">
                 </figure>
               </a>
             </li>
             <li>
               <a href="#" class="project-card">
                 <figure class="card-banner">
-                  <img src="./assets/images/project-5.jpeg" class="w-100" alt="On a dark liver background, Airport luggage car carrying a luggage.">
+                  <img src="./assets/images/project-5.jpg" class="w-100" alt="Best Work"">
                 </figure>
               </a>
             </li>
             <li>
               <a href="#" class="project-card">
                 <figure class="card-banner">
-                  <img src="./assets/images/project-6.jpeg" class="w-100" alt="On a yellow background, a digital watch and a glass.">
+                  <img src="./assets/images/project-6.jpg" class="w-100" alt="Best Work">
                 </figure>
               </a>
             </li>
             <li>
               <a href="#" class="project-card">
                 <figure class="card-banner">
-                  <img src="./assets/images/project-7.jpeg" class="w-100" alt="A fujifilm instant camera on a dark electric blue background.">
+                  <img src="./assets/images/project-7.jpg" class="w-100" alt="Best Work">
                 </figure>
               </a>
             </li>
             <li>
               <a href="#" class="project-card">
                 <figure class="card-banner">
-                  <img src="./assets/images/project-8.jpeg" class="w-100" alt="A fujifilm instant camera on a dark electric blue background.">
+                  <img src="./assets/images/project-8.jpg" class="w-100" alt="Best Work">
                 </figure>
               </a>
             </li>
             <li>
               <a href="#" class="project-card">
                 <figure class="card-banner">
-                  <img src="./assets/images/project-9.jpeg" class="w-100" alt="A fujifilm instant camera on a dark electric blue background.">
+                  <img src="./assets/images/project-9.jpg" class="w-100" alt="Best Work">
                 </figure>
               </a>
             </li>
             <li>
               <a href="#" class="project-card">
                 <figure class="card-banner">
-                  <img src="./assets/images/project-10.jpeg" class="w-100" alt="A fujifilm instant camera on a dark electric blue background.">
+                  <img src="./assets/images/project-10.jpg" class="w-100" alt="Best Work">
                 </figure>
               </a>
             </li>
             <li>
               <a href="#" class="project-card">
                 <figure class="card-banner">
-                  <img src="./assets/images/project-11.jpeg" class="w-100" alt="A fujifilm instant camera on a dark electric blue background.">
+                  <img src="./assets/images/project-11.jpg" class="w-100" alt="Best Work">
                 </figure>
               </a>
             </li>
             <li>
               <a href="#" class="project-card">
                 <figure class="card-banner">
-                  <img src="./assets/images/project-12.jpeg" class="w-100" alt="A fujifilm instant camera on a dark electric blue background.">
+                  <img src="./assets/images/project-12.jpg" class="w-100" alt="Best Work">
                 </figure>
               </a>
             </li>
             <li>
               <a href="#" class="project-card">
                 <figure class="card-banner">
-                  <img src="./assets/images/project-13.jpeg" class="w-100" alt="A fujifilm instant camera on a dark electric blue background.">
+                  <img src="./assets/images/project-13.jpg" class="w-100" alt="Best Work">
                 </figure>
               </a>
             </li>
             <li>
               <a href="#" class="project-card">
                 <figure class="card-banner">
-                  <img src="./assets/images/project-14.jpeg" class="w-100" alt="A fujifilm instant camera on a dark electric blue background.">
+                  <img src="./assets/images/project-14.jpg" class="w-100" alt="Best Work">
                 </figure>
               </a>
             </li>
             <li>
               <a href="#" class="project-card">
                 <figure class="card-banner">
-                  <img src="./assets/images/project-15.jpeg" class="w-100" alt="A fujifilm instant camera on a dark electric blue background.">
+                  <img src="./assets/images/project-15.jpg" class="w-100" alt="Best Work">
                 </figure>
               </a>
             </li>
             <li>
               <a href="#" class="project-card">
                 <figure class="card-banner">
-                  <img src="./assets/images/project-16.jpeg" class="w-100" alt="A fujifilm instant camera on a dark electric blue background.">
+                  <img src="./assets/images/project-16.jpg" class="w-100" alt="Best Work">
                 </figure>
               </a>
             </li>
             <li>
               <a href="#" class="project-card">
                 <figure class="card-banner">
-                  <img src="./assets/images/project-17.jpeg" class="w-100" alt="A fujifilm instant camera on a dark electric blue background.">
+                  <img src="./assets/images/project-17.jpg" class="w-100" alt="Best Work">
                 </figure>
               </a>
             </li>
             <li>
               <a href="#" class="project-card">
                 <figure class="card-banner">
-                  <img src="./assets/images/project-18.jpeg" class="w-100" alt="A fujifilm instant camera on a dark electric blue background.">
+                  <img src="./assets/images/project-18.jpg" class="w-100" alt="Best Work">
                 </figure>
               </a>
             </li>
             <li>
               <a href="#" class="project-card">
                 <figure class="card-banner">
-                  <img src="./assets/images/project-19.jpeg" class="w-100" alt="A fujifilm instant camera on a dark electric blue background.">
+                  <img src="./assets/images/project-19.jpg" class="w-100" alt="Best Work">
                 </figure>
               </a>
             </li>
             <li>
               <a href="#" class="project-card">
                 <figure class="card-banner">
-                  <img src="./assets/images/project-20.jpeg" class="w-100" alt="A fujifilm instant camera on a dark electric blue background.">
+                  <img src="./assets/images/project-20.jpg" class="w-100" alt="Best Work">
                 </figure>
               </a>
             </li>
             <li>
               <a href="#" class="project-card">
                 <figure class="card-banner">
-                  <img src="./assets/images/project-21.jpeg" class="w-100" alt="A fujifilm instant camera on a dark electric blue background.">
+                  <img src="./assets/images/project-21.jpg" class="w-100" alt="Best Work">
                 </figure>
               </a>
             </li>
             <li>
               <a href="#" class="project-card">
                 <figure class="card-banner">
-                  <img src="./assets/images/project-22.jpeg" class="w-100" alt="A fujifilm instant camera on a dark electric blue background.">
+                  <img src="./assets/images/project-22.jpg" class="w-100" alt="Best Work">
                 </figure>
               </a>
             </li>
             <li>
               <a href="#" class="project-card">
                 <figure class="card-banner">
-                  <img src="./assets/images/project-23.jpeg" class="w-100" alt="A fujifilm instant camera on a dark electric blue background.">
+                  <img src="./assets/images/project-23.jpg" class="w-100" alt="Best Work">
                 </figure>
               </a>
             </li>
             <li>
               <a href="#" class="project-card">
                 <figure class="card-banner">
-                  <img src="./assets/images/project-24.jpeg" class="w-100" alt="A fujifilm instant camera on a dark electric blue background.">
+                  <img src="./assets/images/project-24.jpg" class="w-100" alt="Best Work">
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="project-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/project-25.jpg" class="w-100" alt="Best Work">
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="project-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/project-26.jpg" class="w-100" alt="Best Work">
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="project-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/project-27.jpg" class="w-100" alt="Best Work">
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="project-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/project-28.jpg" class="w-100" alt="Best Work">
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="project-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/project-29.jpg" class="w-100" alt="Best Work">
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="project-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/project-24.jpg" class="w-100" alt="Best Work">
                 </figure>
               </a>
             </li>
@@ -435,8 +451,8 @@
                 </div>
                 <div class="wrapper">
                   <h3 class="h4 contact-item-title">Phone:</h3>
-                  <a href="tel:+919347993817" class="contact-info">+91 93479 93817</a>
                   <a href="tel:+919515204240" class="contact-info">+91 95152 04240</a>
+                  <a href="tel:+919100560512" class="contact-info">+91 91005 60512</a>
                 </div>
               </li>
               <li class="contact-list-item">
@@ -445,8 +461,9 @@
                 </div>
                 <div class="wrapper">
                   <h3 class="h4 contact-item-title">Email:</h3>
+                  <a href="mailto:mediaminds2k25@gmail.com" class="contact-info">mediaminds2k25@gmail.com</a>
                   <a href="mailto:surya.tej1317@gmail.com" class="contact-info">surya.tej1317@gmail.com</a>
-                  <a href="mailto:Saicharan.middhe@gmail.com" class="contact-info">Saicharan.middhe@gmail.com</a>
+                  <a href="mailto:Saicharan.middhe@gmail.com" class="contact-info">saicharan.middhe@gmail.com</a>
                   <a href="mailto:thummalaseshadri@gmail.com" class="contact-info">thummalaseshadri@gmail.com</a>
                 </div>
               </li>
@@ -460,7 +477,7 @@
                   </li>
                   <li>
                     <a href="#" class="contact-social-link">
-                      <div class="tooltip">Twitter</div>
+                      <div class="tooltip">X</div>
                       <ion-icon name="logo-twitter"></ion-icon>
                     </a>
                   </li>

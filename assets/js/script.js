@@ -104,6 +104,12 @@ if (localStorage.getItem("theme") === "light_theme") {
   document.body.classList.add("dark_theme");
 }
 
+
+function scrollCarousel(direction) {
+  const carousel = document.getElementById("carousel");
+  const scrollAmount = 260; // Adjust scroll amount
+  carousel.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+}
 /*
   send email
 */
